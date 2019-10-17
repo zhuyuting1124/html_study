@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>停止计数</title>
+</head>
+
+<body>
+<script type="text/javascript"> 
+window.onload = function () {
+  var count = 0;
+  var max=20;
+  var bt = document.getElementById("bt");
+  function show(max){
+	  if(count>max){
+		  clearInterval(flag);
+		  return;} 
+    document.getElementById("ant").innerHTML = count + 1;
+    count =count +1; 
+  } 
+  var flag = setInterval(show, 1000,max);
+  bt.onclick = function () {
+    clearInterval(flag);
+  }
+} 
+</script> 
+<div id="ant">0</div>
+<input type="button" id="bt" value="停止定时器"/>
+
+</body>
+</html>

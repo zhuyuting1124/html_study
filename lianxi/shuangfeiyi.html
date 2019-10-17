@@ -1,0 +1,58 @@
+<html>
+<head>双飞翼模型</head>
+<style>
+.head{
+width:100%;
+background:grey;
+min-width:480px;
+}
+.container{
+background:red;
+padding: 0 18% 0 20%;
+overflow:hidden;
+}
+.main{
+background:yellow;
+width:100%;
+height:200px;
+float:left;
+}
+.left{
+background:blue;
+width:20%;
+height:200px;
+float:left;
+margin-left:-100%;
+position:relative;
+left:-20%;
+}
+.right{
+background:green;
+width:18%;
+height:200px;
+float:left;
+margin-left:-18%;
+position:relative;
+right:-18%;
+}
+.footer{
+clear:both;
+background:black;
+}
+</style>
+<body>
+<div class="head">head</div>
+<div class="container">
+    <div class="main"><p>大家可以看到，三栏并没有在父元素的一行显示，就是因为中间盒子我们给了百分之百的宽度。所有左右两个盒子才会被挤下来。
+那么如何让它们呈现出一行三列的效果呢？那就要让左边的盒子要到中间盒子的最左边，右边的盒子到中间盒子的最右边。换个想法，如果中间盒子不是100%的宽度，那么按照文档流，左边的盒子一定会在中间盒子的后面显示，接着显示右边的盒子。但是现在中间盒子是满屏了的，所以左右两个盒子被挤到下一行显示。我们要做到的是让左右两个盒子都上去。此时，CSS的负边距(negative margin)该上阵了。
+
+作者：森西悠然
+链接：https://www.jianshu.com/p/f9bcddb0e8b4
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。</p></div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+<div class="footer">footer</div>
+</body>
+</html>

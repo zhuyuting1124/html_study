@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>钉钉手机界面</title> 
+<style>
+.head1{
+	width:750px;
+	height:38px;
+	background:#FFFFFF;
+	}
+.head1 b{
+	display:inline;
+}
+.head1 .singal1{
+	width: 4px;
+	height: 4px;
+	background: black;
+	position: absolute;
+	left: 16px;
+	top: 24px;
+}
+.head1 .singal2{
+	width: 4px;
+	height: 8px;
+	background: black;
+	position: absolute;
+	left: 22px;
+	top: 20px;
+}
+.head1 .singal3{
+	width: 4px;
+	height: 12px;
+	background: black;
+	position: absolute;
+	left: 28px;
+	top: 16px;
+}
+.head1 .singal4{
+	width: 4px;
+	height: 16px;
+	background: black;
+	position: absolute;
+	left: 34px;
+	top: 12px;
+}
+.head1 .time{
+	position: absolute;
+	left: 306px;
+	top: 9px;
+	font-size: 24px;
+	font-family: PingFangSC-Regular;
+	color: #191E24;
+}
+.head1 .dianliang{
+	position: absolute;
+	left: 621px;
+	top: 10px;
+	font-size: 24px;
+	font-family: PingFangSC-Regular;
+	color: #191E24;
+}
+.head1 .diange1{
+	width: 36px;
+	height: 15px;
+	background: black;
+	position: absolute;
+	left: 692px;
+	top: 17px;
+}
+.head1 .diange2{
+	width: 4px;
+	height: 10px;
+	background: black;
+	position: absolute;
+	left: 727px;
+	top: 19px;
+}	
+.head2{
+	width:750px;
+	height:90px;
+	background:#FFFFFF;
+	}
+.head2 .return1{
+	position: absolute;
+	left: 26px;
+	top: 53px;
+	font-size: 50px;
+	font-family: PingFangSC-Regular;
+	color: #3296FA;
+}
+.head2 .return2{
+	position:absolute;
+	left:58px;
+	top:64px;
+	font-size:32px;
+	font-family:PingFangSC-Regular;
+	color:#3296FA;
+	}
+.head2 .headline{
+	position: absolute;
+	left: 278px;
+	top: 64px;
+	font-size: 34px;
+	font-family: PingFangSC-Medium;
+	color: #191E24;
+}
+
+.gray{
+	width:750px;
+	height:32px;
+	background:#CCC;
+	background:rgba(0,0,0,0.03);}
+
+.body1{
+	width:750px;
+	height:918px;
+	background:#FFFFFF;
+	}
+.body1 .background{
+	background-image: url(background.png);
+	width: 702px;
+	height: 626px;
+	position: absolute;
+	left: 33px;
+	top: 192px;
+}
+.body1 .background .title{
+	position: absolute;
+	left: 149px;
+	top: 68px;
+	font-size: 36px;
+	font-family: PingFangSC-Semibold;
+	color: #8B5635;
+}
+.body1 .background .content1{
+	position: absolute;
+	left: 69px;
+	top: 140px;
+	font-size: 26px;
+	font-family: PingFangSC-Regular;
+	color: #8A5535;
+	line-height: 1.5em;
+}
+.body1 .background .content1 .line1{
+	display: inline;
+	position: absolute;
+	left: 141px;
+	top: 61px;
+	}
+.body1 .background .content1 span1{
+	position: absolute;
+	left: 557px;
+	top: 34px;
+	}
+.body1 .background .content1 .line2{
+	display: inline;
+	position: absolute;
+	left: 209px;
+	top: 106px;
+	}
+.body1 .background .content1 .line3{
+	display: inline;
+	position: absolute;
+	left: 146px;
+	top: 150px;
+	}
+.body1 .background .content1 span2{
+	position: absolute;
+	left: 455px;
+	top: 123px;
+	width: 148px;
+	height: 50px;
+	}
+.body1 .background .content1 span3{
+	position: absolute;
+	left: 1px;
+	top: 165px;
+	width: 590px;
+	height: 120px;
+	}
+.body1 .background .content1 span4{
+	position: absolute;
+	left: 3px;
+	top: 291px;
+	width: 590px;
+	height: 43px;
+	}
+.body1 .background .content1 span5{
+	position: absolute;
+	left: 1px;
+	top: 330px;
+	width: 590px;
+	height: 43px;
+	}
+.body1 .background .content1 span6{
+	position: absolute;
+	left: 1px;
+	top: 370px;
+	width: 590px;
+	height: 43px;
+	}
+.body1 .content2{
+	position: absolute;
+	top: 851px;
+	width: 704px;
+	height: 76px;
+	margin: auto;
+	font-family: PingFangSC-Regular;
+	font-size: 28px;
+	color: gray;
+	left: 36px;
+	background:#FFF;
+	}
+.body1 .button{
+	width: 386px;
+	height: 56px;
+	position: absolute;
+	top: 957px;
+	left: 192px;
+	background-image: url(Mask.png);
+	border:1px solid #CCC;
+	vertical-align: middle;
+	padding-top:10px;
+}
+.body1 .button {
+	text-align: center;
+	display: inline-block;
+	font-family: PingFangSC-Medium;
+	font-size: 32px;
+	color: #7E8185;
+	}
+.body2{
+	width:750px;
+	height:684px;
+	position:absolute;
+	background:#FFFFFF;
+	top:1110px;
+		}
+img{
+	position: absolute;
+	top: 80px;
+	left: 207px;
+	}
+.body2 .button{
+	width: 392px;
+	height: 60px;
+	position: absolute;
+	top: 464px;
+	left: 180px;
+	background-image: url(Mask.png);
+	border:1px solid #CCC;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: PingFangSC-Medium;
+	font-size: 32px;
+	color: #2994FD;
+	padding-top:10px;
+}
+.body2 .word{
+	width:308px;
+	height:44px;
+	position:absolute;
+	top:584px;
+	left:241px;
+	font-family:PingFangSC-Medium;
+	font-size:32px;
+	color:#7E8185;
+	}
+.gray1{
+	width:750px;
+	height:32px;
+	background:#CCC;
+	background:rgba(0,0,0,0.03);
+	position:absolute;
+	top:1794px;
+	}
+.body3{
+	width: 750px;
+	height: 220px;
+	position: absolute;
+	top: 1826px;
+	background: #FFFFFF;
+}
+.body3 .yes{
+	width:622.2px;
+	height:80px;
+	font-family:PingFangSC-Regular;
+	font-size:28px;
+	color:#000000;
+	position:absolute;
+	top:20.8px;
+	left:79.8px;
+	}
+.body3 .yes .tiaokuan{
+	color:#3296FA;
+	}
+.body3 .rec{
+	
+	width:35px;
+	height:3px;
+	display:inline;
+	position:absolute;
+	top:24px;
+	left:32px;
+}
+.body3 .reserve{
+	width:686px;
+	height:68px;
+	margin:auto;
+	background:#3296FA;
+	position:absolute;
+	top:118px;
+	left:32px;
+	}
+.body3 .reserve .submit{
+	font-family:PingFangSC-Medium;
+	font-size:34px;
+	color:#FFFFFF;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+</style>
+</head>
+<body>
+
+<div class="head1">
+	<b class="singal1"></b>
+	<b class="singal2"></b>
+	<b class="singal3"></b>
+	<b class="singal4"></b>
+	<span class="time">9:41AM</span>
+	<span class="dianliang">100%</span>
+	<b class="diange1"></b>
+	<b class="diange2"></b>
+</div>
+
+<div class="head2">
+	<span class="return1">&lt;</span>
+    <span class="return2">返回</span>
+    <span class="headline"><b>上传公函</b></span>
+</div>
+
+<div class="gray"></div>
+
+<div class="body1">
+    <div class="background">
+    <div class="title"><b>钉钉企业组织认证申请公函</b></div>
+    <div class="content1">钉钉(中国)信息技术有限公司：<br>
+    本企业/组织<HR class="line1" width=410px color=#8A5535 SIZE=2px><span1>兹</span1><br> 
+    授权在职员工姓名<HR class="line2" width=373px color=#8A5535 SIZE=2px><br>(身份证号码<HR class="line3" width=296px color=#8A5535 SIZE=2px><span2>为本企业/组</span2><br >
+    <span3>织管理员。本企业/组织承诺遵守《钉钉服务协议》和《钉钉公约》，保证填写信息真实有效并授权企业管理员代表本企业阅读并确认《钉钉认证规范》</span3>
+    <span4>管理员：<b style="text-decoration:underline">小泽泽</b></span4>
+    <span5>身份证号码：<b style="text-decoration:underline">3201254199708263212</b></span5>
+    <span6>日期：<b style="text-decoration:underline">2018-7-22</b></span6>
+    </div>
+  </div> 
+  <div class="content2">请下载以上模版 ( 或手抄以上内容 ) ，填写并加盖公章，拍照后上传 (签名和授权人一致) 。</div>
+  <div class="button">
+  <span class="xiazai">下载模板</span>
+  </div>
+</div>
+
+<div class="gray"></div>
+
+<div class="body2">
+<img src="unlocked.png" alt="未加载">
+  <div class="button"></span>拍照/上传打印公函</span></div>
+  <span class="word">拍照/上传打印公函</span>
+</div>
+
+<div class="gray1"></div>
+
+<div class="body3">
+  <div class="yes">我已阅读并同意<span class="tiaokuan">《钉钉公约》《钉钉服务协议》
+  《钉钉企业/组织认证管理规范》</span></div>
+ <div class="rec"> <input type="checkbox" name="choose" value="choice" /></div>
+ <div class="reserve"><div class="submit">保存</div></div>
+</div>
+
+
+</body>
+</html>

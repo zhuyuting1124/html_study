@@ -1,0 +1,26 @@
+<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <title>笑容动画</title> <style>
+    .loadPic{
+        background: url(erik_ce204002.jpg);
+        width: 480px;
+        height: 480px;
+        background-repeat: no-repeat;
+    }
+    </style> </head> <body> <div class="loadPic"> </div> <script>
+
+        window.onload = function () {
+            var ani = document.getElementsByClassName("loadPic")[0];
+            var Y = 0;
+
+            function changePic() {
+
+                ani.style.backgroundPositionY = '-' + Y + 'px';
+                Y+=480;
+                 if(Y==8160){
+                    Y=0;
+                }
+            }
+            setInterval(changePic, 100);
+        }
+
+        </script> </body> </html>
+ 
